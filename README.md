@@ -15,8 +15,8 @@
 1. Clone this repository
 2. Run `bundle install` to install the dependencies (or `gem install discordrb` and `gem install api-ai-ruby`)
 3. Set environment variables:
-  * Set `BOT_TOKEN` to the bot's token
-  * Set `CHANNELID-ClientToken` to the DialogFlow Client Access Token to be used for the provided CHANNELID 
+    * Set `BOT_TOKEN` to the bot's token
+    * Set `CHANNELID-ClientToken` to the DialogFlow Client Access Token to be used for the provided CHANNELID 
 4. Run with `ruby phoenix.rb`
 
 ---
