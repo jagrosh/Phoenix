@@ -6,7 +6,7 @@ sessions = {}
 
 bot.ready do |event|
   puts "Logged in as #{bot.profile.username} (ID:#{bot.profile.id}) | #{bot.servers.size} servers"
-  bot.game = '🔥🔥🔥'
+  bot.game = ENV['BOT_GAME']
 end
 
 bot.message do |event|
