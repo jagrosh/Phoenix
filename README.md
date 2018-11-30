@@ -1,6 +1,8 @@
 # Phoenix
 🔥 Discord autoreply bot using [DialogFlow](https://dialogflow.com/) and [discordrb](https://github.com/meew0/discordrb)
 
+![Example](https://i.imgur.com/APQymvo.png)
+
 ---
 
 ## Self-Hosting
