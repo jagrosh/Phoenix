@@ -16,7 +16,7 @@ bot.message do |event|
       if !sessions[event.channel.id]
         sessions[event.channel.id] = ApiAiRuby::Client.new( :client_access_token => ENV[str] )
       end
-      response = sessions[event.channel.id].text_request event.message.content
+      response = sessions[event.channel.id].text_request event.message.content[0,255]
       speech = response[:result][:fulfillment][:speech]
       if speech && !speech.empty?
         event.channel.start_typing
