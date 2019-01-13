@@ -11,7 +11,7 @@ end
 
 bot.message do |event|
   if event.server && !event.author.roles.any?
-    str = "#{event.channel.id}-ClientToken"
+    str = "#{event.channel.id}_CLIENT_TOKEN"
     if ENV[str]
       if !sessions[event.channel.id]
         sessions[event.channel.id] = ApiAiRuby::Client.new( :client_access_token => ENV[str] )

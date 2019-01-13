@@ -18,7 +18,8 @@
 2. Run `bundle install` to install the dependencies (or `gem install discordrb` and `gem install api-ai-ruby`)
 3. Set environment variables:
     * Set `BOT_TOKEN` to the bot's token
-    * Set `CHANNELID-ClientToken` to the DialogFlow Client Access Token to be used for the provided CHANNELID 
+    * Set `BOT_GAME` to the game you want the bot to be "playing"
+    * Set `ActualChannelIdHere_CLIENT_TOKEN` to the DialogFlow Client Access Token to be used for each channel you want the bot to respond in (replace ActualChannelIdHere with the actual channel ID).
 4. Run with `ruby phoenix.rb`
 
 ---
@@ -26,7 +27,7 @@
 ## DialogFlow
 
 ### Overview
-DialogFlow is an API that is very similar in functionality to Siri, Alexa, Cortana, Ok Google, etc. For this project, we're using the text-based, machine-learning portion to detect topics and when to produce replies. Conveniently, a DialogFlow agent can be edited collaboratively and updates immediately, so mutliple people can provide topics and responses for the bot without having to restart the bot nor have access to the bot's hosting.
+DialogFlow is an API that is very similar in functionality to Siri, Alexa, Cortana, Ok Google, etc. For this project, we're using the text-based, machine-learning portion to detect topics and when to produce replies. Conveniently, a DialogFlow agent can be edited collaboratively and updates immediately, so multiple people can provide topics and responses for the bot without having to restart the bot nor have access to the bot's hosting.
 
 ### Configuring
 1. Create an agent (and set the token to the environment as listed above)
